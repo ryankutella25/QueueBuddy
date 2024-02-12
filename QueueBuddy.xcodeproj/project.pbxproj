@@ -16,6 +16,9 @@
 		341FBD992B5AE1DC008A660C /* QueueBuddyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FBD982B5AE1DC008A660C /* QueueBuddyTests.swift */; };
 		341FBDA32B5AE1DC008A660C /* QueueBuddyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FBDA22B5AE1DC008A660C /* QueueBuddyUITests.swift */; };
 		341FBDA52B5AE1DC008A660C /* QueueBuddyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FBDA42B5AE1DC008A660C /* QueueBuddyUITestsLaunchTests.swift */; };
+		341FBDB22B5AE224008A660C /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341FBDB12B5AE224008A660C /* SpotifyiOS.framework */; };
+		341FBDB82B5AE5B3008A660C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341FBDB72B5AE5B3008A660C /* Constants.swift */; };
+		341FBDBA2B5AE7B8008A660C /* SpotifyiOS.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341FBDB92B5AE7B8008A660C /* SpotifyiOS.xcframework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,10 @@
 		341FBD9E2B5AE1DC008A660C /* QueueBuddyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QueueBuddyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		341FBDA22B5AE1DC008A660C /* QueueBuddyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueBuddyUITests.swift; sourceTree = "<group>"; };
 		341FBDA42B5AE1DC008A660C /* QueueBuddyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueBuddyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		341FBDB12B5AE224008A660C /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
+		341FBDB42B5AE323008A660C /* QueueBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QueueBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		341FBDB72B5AE5B3008A660C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		341FBDB92B5AE7B8008A660C /* SpotifyiOS.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = SpotifyiOS.xcframework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				341FBDBA2B5AE7B8008A660C /* SpotifyiOS.xcframework in Frameworks */,
+				341FBDB22B5AE224008A660C /* SpotifyiOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,13 +108,11 @@
 		341FBD802B5AE1DA008A660C /* QueueBuddy */ = {
 			isa = PBXGroup;
 			children = (
-				341FBD812B5AE1DA008A660C /* AppDelegate.swift */,
+				341FBDB32B5AE28A008A660C /* Files */,
 				341FBD832B5AE1DA008A660C /* SceneDelegate.swift */,
 				341FBD852B5AE1DA008A660C /* ViewController.swift */,
-				341FBD872B5AE1DA008A660C /* Main.storyboard */,
-				341FBD8A2B5AE1DB008A660C /* Assets.xcassets */,
-				341FBD8C2B5AE1DB008A660C /* LaunchScreen.storyboard */,
-				341FBD8F2B5AE1DB008A660C /* Info.plist */,
+				341FBDB72B5AE5B3008A660C /* Constants.swift */,
+				341FBDB42B5AE323008A660C /* QueueBuddy-Bridging-Header.h */,
 			);
 			path = QueueBuddy;
 			sourceTree = "<group>";
@@ -125,6 +132,20 @@
 				341FBDA42B5AE1DC008A660C /* QueueBuddyUITestsLaunchTests.swift */,
 			);
 			path = QueueBuddyUITests;
+			sourceTree = "<group>";
+		};
+		341FBDB32B5AE28A008A660C /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				341FBD812B5AE1DA008A660C /* AppDelegate.swift */,
+				341FBD872B5AE1DA008A660C /* Main.storyboard */,
+				341FBD8A2B5AE1DB008A660C /* Assets.xcassets */,
+				341FBD8C2B5AE1DB008A660C /* LaunchScreen.storyboard */,
+				341FBD8F2B5AE1DB008A660C /* Info.plist */,
+				341FBDB12B5AE224008A660C /* SpotifyiOS.framework */,
+				341FBDB92B5AE7B8008A660C /* SpotifyiOS.xcframework */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -195,6 +216,7 @@
 				TargetAttributes = {
 					341FBD7D2B5AE1DA008A660C = {
 						CreatedOnToolsVersion = 13.4.1;
+						LastSwiftMigration = 1340;
 					};
 					341FBD932B5AE1DC008A660C = {
 						CreatedOnToolsVersion = 13.4.1;
@@ -261,6 +283,7 @@
 				341FBD862B5AE1DA008A660C /* ViewController.swift in Sources */,
 				341FBD822B5AE1DA008A660C /* AppDelegate.swift in Sources */,
 				341FBD842B5AE1DA008A660C /* SceneDelegate.swift in Sources */,
+				341FBDB82B5AE5B3008A660C /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,8 +458,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4UP24R474;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QueueBuddy",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QueueBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -449,9 +478,12 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKutella.QueueBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QueueBuddy/QueueBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -462,8 +494,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = A4UP24R474;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/QueueBuddy",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = QueueBuddy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -476,9 +514,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = RyanKutella.QueueBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "QueueBuddy/QueueBuddy-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
